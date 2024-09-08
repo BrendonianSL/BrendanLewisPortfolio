@@ -24,7 +24,7 @@ a {
 }
 
 .cta-button {
-    background-color: #141414;
+    background: #141414;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,8 +36,7 @@ a {
 }
 
 .cta-button:hover {
-    background-color: #FFFFFF;
-    color: #141414;
+    background: linear-gradient(220.55deg, #FFF500 0%, #FF00B8 100%);
 }
 
 .cta-button-inverse {
@@ -47,14 +46,13 @@ a {
     justify-content: center;
     padding: 1rem 2rem;
     border-radius: 0.625rem;
-    border: 0.063rem solid white;
     text-decoration: none;
     color: #141414;
     font-weight: 500;
 }
 
 .cta-button-inverse:hover {
-    background-color: #141414;
+    background: linear-gradient(220.55deg, #FFF500 0%, #FF00B8 100%);
     color: white;
 }
 
@@ -72,11 +70,17 @@ figure img {
     overflow: hidden;
 }
 
+.cta {
+    background: linear-gradient(220.55deg, #FFF500 0%, #FF00B8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Font Styling */
 h1 {
     font-weight: 900;
     text-align: center;
-    color: #141414;
 }
 
 h2 {
@@ -230,7 +234,7 @@ nav {
 }
 
 .project:hover {
-    background-color: #FFFFFF;
+    background: linear-gradient(220.55deg, #FFF500 0%, #FF00B8 100%);
     color: #141414;
 }
 
@@ -301,8 +305,7 @@ nav {
 }
 
 .social-card:hover {
-    background-color: #FFFFFF;
-    color: #141414;
+    background: linear-gradient(220.55deg, #FFF500 0%, #FF00B8 100%);
 }
 
 .arrow-icon {
@@ -546,6 +549,13 @@ footer {
 
     #menu-options a {
         text-decoration: none;
+    }
+
+    #menu-options a:hover {
+        background: linear-gradient(220.55deg, #FFF500 0%, #FF00B8 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     #mobile-menu {

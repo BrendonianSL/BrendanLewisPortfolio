@@ -23,6 +23,13 @@ a {
     color: white;
 }
 
+.cta {
+    background: linear-gradient(220.55deg, #FFF500 80%, #FF00B8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 figure {
     width: 100%;
 }
@@ -116,7 +123,7 @@ nav {
 }
 
 .project:hover {
-    background-color: #FFFFFF;
+    background: linear-gradient(220.55deg, #FFF500 0%, #FF00B8 100%);
     color: #141414;
 }
 
@@ -345,6 +352,13 @@ footer {
 
     #menu-options a {
         text-decoration: none;
+    }
+
+    #menu-options a:hover {
+        background: linear-gradient(220.55deg, #FFF500 0%, #FF00B8 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     #mobile-menu {
