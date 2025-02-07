@@ -1,0 +1,13 @@
+#cta-button {
+    padding: 1rem 2rem; /* 16px 32px */
+    border-radius: 1rem; /* 16px */
+    font-size: 1.125rem; /* 18px */
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+    #cta-button {
+        font-size: 1.25rem; /* 18px */
+    }
+}
