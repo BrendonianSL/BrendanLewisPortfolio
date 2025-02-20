@@ -1,10 +1,60 @@
-#cta-button {
+
+
+.cta-button, .secondary-btn {
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    gap: .5rem /* 8 px */;
     padding: 1rem 2rem; /* 16px 32px */
     border-radius: 1rem; /* 16px */
     font-size: 1.125rem; /* 18px */
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
+    border: none;
+    color: white;
+    width: auto;
 }
+
+.cta-button {
+    background-color: var(--cta-color);
+    border: 1px solid var(--cta-color);
+    transition: all .25s ease-in;
+}
+
+.cta-button svg {
+    transition: transform .25s ease-in;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: var(--cta-color);
+    border: 1px solid var(--cta-color);
+}
+
+.cta-button:hover svg {
+    transform: rotate(45deg);
+}
+
+.cta-button svg path {
+    transition: fill .25s ease-in;
+}
+
+.cta-button:hover svg path {
+    fill: var(--cta-color)
+}
+
+.secondary-btn {
+    background-color: var(--alt-black);
+    border: 1px solid var(--alt-black);
+    transition: all .25s ease-in;
+}
+
+.secondary-btn:hover {
+    background-color: transparent;
+    color: var(--alt-black);
+}
+
+
 
 @media only screen and (min-width: 1024px) {
     #cta-button {

@@ -1,0 +1,14 @@
+
+
+.goal {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.goal-icon {
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    border-radius: 50px;
+}

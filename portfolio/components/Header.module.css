@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0rem var(--desktop-padding);
+    font-family: 'Gabarito';
+}
+
+.header div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: var(--cta-color);
+}
+
+.active {
+    color: var(--cta-color);
+}
+
+.header ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
