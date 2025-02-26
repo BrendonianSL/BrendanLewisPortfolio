@@ -26,7 +26,7 @@ export default function Homepage() {
         <main className={styles['homepage']}>
             <section className={styles['hero-section'] + ' hidden'}>
                 <div className={styles['hero-section-container']}>
-                    <img className={styles['hero-image'] + ' animate'} src='./src/brendan.jpg' />
+                    <img className={styles['hero-image'] + ' animate'} src="/brendan.jpg" />
                     <div className={styles['hero-section-text']}>
                         <h1 className={'animate'} style={{transitionDelay: '200ms'}}>I'm Brendan Lewis, a <span>Web Developer </span>specializing in creating <span>user friendly </span> and <span>intuitive </span> websites for everyone!</h1>
                         <p className={'subheading-text animate'} style={{transitionDelay: '300ms'}}>Drawing from my expertise in UI/UX design and a solid foundation in web development, I craft intuitive, user-centric web pages that deliver seamless and engaging experiences.</p>
@@ -88,14 +88,14 @@ export default function Homepage() {
                         </p>
                     </div>
                     <div className={styles['skillset-carousel'] + ' animate'}>
-                        <img src='./src/assets/images/scrollnames.png'/>
-                        <img src='./src/assets/images/scrollnames.png'/>
+                        <img src='/scrollnames.png'/>
+                        <img src='/scrollnames.png'/>
                     </div>
                 </div>
             </section>
             <section className={styles['about-section'] + ' hidden'}>
                 <div className={styles['about-section-container']}>
-                    <img src='./src/brendan.jpg' className={styles['about-section-image'] + ' animate'} />
+                    <img src='/brendan.jpg' className={styles['about-section-image'] + ' animate'} />
                     <div className={styles['about-section-text']}>
                         <div className={styles['about-section-text-container']}>
                             <h2 className={'animate'}><span>Breaking Code, Taking Names (Sometimes)</span></h2>
@@ -116,7 +116,7 @@ export default function Homepage() {
                         <p className={'subheading-text animate'} style={{transitionDelay: '100ms'}}>Thought so, I brought some help just in case!</p>
                     </div>
                     <div className={styles['testimonials-card-container'] + ' animate'}>
-                        <Testimonial name={'Brandon Louis'} image={'b1.png'}description={'Not Brendan Lewis'} paragraph={'This guy? Absolute wizard with JavaScript. I once saw him fix a bug so fast, the computer apologized. His code is so clean, I use it as a benchmark for my own… which is weird, because we have exactly the same coding style. Suspicious.'}/>
+                        <Testimonial name={'Brandon Louis'} image={'b1.png'} description={'Not Brendan Lewis'} paragraph={'This guy? Absolute wizard with JavaScript. I once saw him fix a bug so fast, the computer apologized. His code is so clean, I use it as a benchmark for my own… which is weird, because we have exactly the same coding style. Suspicious.'}/>
                         <Testimonial 
                             name={'Brendon Lewison'} 
                             image={'b2.jpg'}

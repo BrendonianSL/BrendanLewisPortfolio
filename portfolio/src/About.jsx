@@ -25,7 +25,7 @@ export default function About() {
                     <h1 className={'animate'}>The <span>Man</span>, The <span>Myth</span>, The <span>Web Developer</span>?</h1>
                     <div className={styles['story-content']+ ' animate'}>
                         <figure>
-                            <img src='./src/assets/images/brendancapstone.jpg' />
+                            <img src='/brendancapstone.jpg' />
                         </figure>
                         <div className={styles['story-text-container']}>
                             <h2><span>My Journey!</span></h2>

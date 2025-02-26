@@ -5,7 +5,7 @@ export default function Project({ name, type, link, image }) {
     return (
         <Link className={styles['project'] + ' animate'} style={{transitionDelay: '100ms'}} to={link}>
             <figure className={styles['project-image-container']}>
-                <img decoding='sync' loading='eager' className={styles['project-image']} src={`./src/assets/images/${image}`} />
+                <img decoding='sync' loading='eager' className={styles['project-image']} src={`/${image}`} />
                 <img className={styles['arrow']} src='./src/assets/icons/arrow.svg' />
             </figure>
             <div className={styles['project-text-container']}>
