@@ -1,9 +1,9 @@
 import styles from './Testimonial.module.css';
 
-export default function Testimonial({ name, description, paragraph}) {
+export default function Testimonial({ name, description, paragraph, image}) {
     return (
         <div className={styles['testimonial']}>
-            <img src='./src/assets/images/brendancapstone.jpg'/>
+            <img src={`./src/assets/images/${image}`} />
             <div className={styles['text-container']}>
                 <div className={styles['container-heading']}>
                     <h3>{name}</h3>

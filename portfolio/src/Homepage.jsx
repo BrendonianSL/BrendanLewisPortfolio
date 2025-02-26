@@ -1,13 +1,13 @@
 import styles from './Homepage.module.css';
 import '../src/index.css';
 import ButtonCTA from '../components/ButtonCTA';
-import ProjectFrame from '../components/ProjectFrame';
 import Button from '../components/Button';
 import Testimonial from '../components/Testimonial';
 import { useEffect } from 'react';
+import Project from '../components/Project';
+import { projectList } from './Projects';
 
 export default function Homepage() {
-
     useEffect(() => {
         //Creates An Intersection Observer.
         const observer = new IntersectionObserver((entries) => {
@@ -32,15 +32,17 @@ export default function Homepage() {
                         <p className={'subheading-text animate'} style={{transitionDelay: '300ms'}}>Drawing from my expertise in UI/UX design and a solid foundation in web development, I craft intuitive, user-centric web pages that deliver seamless and engaging experiences.</p>
                     </div>
                     <div className={styles['hero-button-container'] + ' animate'} style={{transitionDelay: '400ms'}}>
-                        <ButtonCTA text={'Get In Touch'} />
-                        <Button text={'View Work'} />
+                        <ButtonCTA text={'Get In Touch'} link={'mailto:bscottlewis04@gmail.com'}/>
+                        <Button text={'View Work'} link={'/about'} />
                     </div>
                 </div>
             </section>
-            <section className={styles['featured-work']}>
-                <div className={styles['featured-work-container']}>
-
-                </div>
+            <section className={styles['featured-work'] + ' hidden'}>
+            <div className={styles['featured-work-container'] + ' animate'}>
+                {projectList.slice(0, 2).map((element, index) => (
+                    <Project name={element.projectName} type={element.projectType} link={element.projectLink} image={element.projectImage} />
+                ))}
+            </div>
             </section>
             <section className={styles['workflow-section'] + ' hidden'}>
                 <div className={styles['workflow-container']}>
@@ -95,8 +97,15 @@ export default function Homepage() {
                 <div className={styles['about-section-container']}>
                     <img src='./src/brendan.jpg' className={styles['about-section-image'] + ' animate'} />
                     <div className={styles['about-section-text']}>
-                        <h2 className={'animate'}><span>Breaking Code, Taking Names (Sometimes)</span></h2>
-                        <p className={'subheading-text animate'} style={{transitionDelay: '100ms'}}>When I’m not spending time debugging a website that was the result of a missing semicolon, I’m usually diving into new projects, experimenting with design ideas, or indulging in hobbies and activities outside my profession. My journey has been far from boring, but I promise you I won’t bore you with the details. Just take a seat! </p>
+                        <div className={styles['about-section-text-container']}>
+                            <h2 className={'animate'}><span>Breaking Code, Taking Names (Sometimes)</span></h2>
+                            <p className={'subheading-text animate'} style={{transitionDelay: '100ms'}}>
+                                When I’m not spending time debugging a website that was the result of a missing semicolon, I’m usually diving into new projects, experimenting with design ideas, or indulging in hobbies and activities outside my profession. My journey has been far from boring, but I promise you I won’t bore you with the details. Just take a seat! 
+                            </p>
+                        </div>
+                        <div className={'animate'}>
+                        <Button text={'Follow Me'} link={'/about'} />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -107,9 +116,19 @@ export default function Homepage() {
                         <p className={'subheading-text animate'} style={{transitionDelay: '100ms'}}>Thought so, I brought some help just in case!</p>
                     </div>
                     <div className={styles['testimonials-card-container'] + ' animate'}>
-                        <Testimonial name={'Brandon Louis'} description={'Not Brendan Lewis'} paragraph={'This guy? Absolute wizard with JavaScript. I once saw him fix a bug so fast, the computer apologized. His code is so clean, I use it as a benchmark for my own… which is weird, because we have exactly the same coding style. Suspicious.'}/>
-                        <Testimonial name={'Brendon Lewison'} description={'Definetely Not Brendan Lewis'} paragraph={'This guy? Absolute wizard with JavaScript. I once saw him fix a bug so fast, the computer apologized. His code is so clean, I use it as a benchmark for my own… which is weird, because we have exactly the same coding style. Suspicious.'}/>
-                        <Testimonial name={'Branden Louise'} description={'Is This Brendan Lewis?'} paragraph={'This guy? Absolute wizard with JavaScript. I once saw him fix a bug so fast, the computer apologized. His code is so clean, I use it as a benchmark for my own… which is weird, because we have exactly the same coding style. Suspicious.'}/>
+                        <Testimonial name={'Brandon Louis'} image={'b1.png'}description={'Not Brendan Lewis'} paragraph={'This guy? Absolute wizard with JavaScript. I once saw him fix a bug so fast, the computer apologized. His code is so clean, I use it as a benchmark for my own… which is weird, because we have exactly the same coding style. Suspicious.'}/>
+                        <Testimonial 
+                            name={'Brendon Lewison'} 
+                            image={'b2.jpg'}
+                            description={'Definetely Not Brendan Lewis'} 
+                            paragraph={'I walked into work one day and was struggling to debug my program from the day prior. I had struggled all night to find out what the problem was and he walked over and put a semi-colon at the end of my statement! And it worked! Nice!!'}
+                        />
+                        <Testimonial 
+                            name={'Branden Louise'} 
+                            image={'b3.jpg'}
+                            description={'Is This Brendan Lewis?'} 
+                            paragraph={'Oh Brendan? He once optimized a function so well, the server asked for his autograph. His code is so organized, it organizes itself. The best part? It’s so similar to mine, I’m convinced we share the same brain. Weird, but impressive!'}
+                        />
                     </div>
                 </div>
             </section>
@@ -119,7 +138,7 @@ export default function Homepage() {
                         <h2>You Got Room For <span>One More?</span></h2>
                         <p className={'subheading-text'}>My resume and I are looking for a new home!</p>
                     </div>
-                    <ButtonCTA text={'View My Resume'} style={{transitionDelay: '200ms'}}/>
+                    <ButtonCTA link={'/experience'} text={'View My Resume'} style={{transitionDelay: '200ms'}}/>
                 </div>
             </section>
         </main>

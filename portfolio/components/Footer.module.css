@@ -11,4 +11,25 @@
     width: 100%;
     border-bottom: 1px solid #777777;
     padding-bottom: 1.5rem;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 4rem;
+}
+
+.socials-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }

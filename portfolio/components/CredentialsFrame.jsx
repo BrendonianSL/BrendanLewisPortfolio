@@ -3,7 +3,7 @@ import styles from './CredentialsFrame.module.css';
 export default function CredentialsFrame({ title, source, date, description = [] }) {
     console.log(description);
     return (
-        <div className={styles['credentials']}>
+        <div className={styles['credentials'] + ' animate'} style={{transitionDelay: '100ms'}}>
             <div className={styles['credentials-details']}>
                 <img className={styles['icon']}src='./src/assets/icons/education.png' />
                 <p>{source}</p>

@@ -21,7 +21,7 @@ button {
   font-weight: 400;
 
   --max-container-width: 1440px;
-  --alt-white: hsl(0, 0, 97%);
+  --alt-white: hsl(0, 0%, 97%);
   --alt-black: #1A1A1A;
   --cta-color: hsl(219, 88%, 53%);
   --desktop-padding: 2.5rem; /* 40px */
@@ -96,6 +96,19 @@ span {
 
 .subheading-text {
   font-size: 1.125rem;
+}
+
+.active {
+  color: var(--cta-color);
+}
+
+a {
+  color: var(--alt-black);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cta-color);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
