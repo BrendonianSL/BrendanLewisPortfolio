@@ -40,7 +40,7 @@ export default function Header() {
                         ))}
                     </ul>
                 </nav>
-                <img onClick={toggleMenu} src='./src/assets/icons/menu.svg' alt='Menu Icon' />
+                <img onClick={toggleMenu} src='/menu.svg' alt='Menu Icon' />
                 <div style={{maxHeight: isOpen ? '250px' : '0px'}} className={styles['mobileMenu']}>
                     <div>
                         {menuOptions.map((item, index) => (

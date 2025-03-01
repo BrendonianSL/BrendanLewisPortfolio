@@ -12,16 +12,16 @@ export default function Footer() {
                     </div>
                     <div className={styles['socials-container']}>
                         <Link to='https://www.linkedin.com/in/brendanslewis/'>
-                            <img src='./src/assets/icons/linkedin.svg' />
+                            <img src='/linkedin.svg' />
                         </Link>
                         <Link to='https://github.com/BrendonianSL'>
-                            <img src='./src/assets/icons/github.svg' />
+                            <img src='/github.svg' />
                         </Link>
                         <Link to='https://www.behance.net/brendanlewis4/projects'>
-                            <img src='./src/assets/icons/behance.svg' />
+                            <img src='/behance.svg' />
                         </Link>
                         <Link to='mailto:bscottlewis04@gmail.com'>
-                            <img src='./src/assets/icons/email.svg' />
+                            <img src='/email.svg' />
                         </Link>
                     </div>
                 </div>
