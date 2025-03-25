@@ -5,7 +5,7 @@ export default function CredentialsFrame({ title, source, date, description = []
     return (
         <div className={styles['credentials'] + ' animate'} style={{transitionDelay: '100ms'}}>
             <div className={styles['credentials-details']}>
-                <img className={styles['icon']}src='./src/assets/icons/education.png' />
+                <img className={styles['icon']}src='/education.png' />
                 <p>{source}</p>
             </div>
             <div className={styles['credentials-text-container']}>
