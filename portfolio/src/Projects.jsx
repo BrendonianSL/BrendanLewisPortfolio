@@ -5,6 +5,12 @@ import Project from '../components/Project';
     //Creates A List Of The Projects To Loop Over
     export const projectList = [
         {
+            projectType: 'Client Work',
+            projectName: 'Data Analyst Portfolio',
+            projectLink: 'ngordonportfolio.com',
+            projectImage: 'NathanPortfolio.webp',
+        },
+        {
             projectType: 'Full Stack Web Development',
             projectName: 'Breadbox',
             projectLink: 'https://breadbox.onrender.com',
@@ -51,7 +57,7 @@ import Project from '../components/Project';
             projectName: 'Street Fighter Database',
             projectLink: 'https://github.com/BrendonianSL/StreetFighterDatabase',
             projectImage: 'Programming.webp',
-        }
+        },
     ];
 
 export default function Projects() {
