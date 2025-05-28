@@ -2,7 +2,7 @@ import styles from './Quote.module.css';
 
 export default function Quote({ quote = [] , author }) {
     return (
-        <article className={styles['container'] + ' hidden'}>
+        <article className={styles['container']}>
             <h2 className={'animate'}>{quote.map(element => {
                 if(element.highlight === false) {
                     return element.text

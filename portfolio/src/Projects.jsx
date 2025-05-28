@@ -7,7 +7,7 @@ import Project from '../components/Project';
         {
             projectType: 'Client Work',
             projectName: 'Data Analyst Portfolio',
-            projectLink: 'ngordonportfolio.com',
+            projectLink: 'https://ngordonportfolio.com',
             projectImage: 'NathanPortfolio.webp',
         },
         {
@@ -61,22 +61,9 @@ import Project from '../components/Project';
     ];
 
 export default function Projects() {
-        useEffect(() => {
-            //Creates An Intersection Observer.
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if(entry.isIntersecting) {
-                        entry.target.classList.add('revealed');
-                    }
-                });
-            });
-    
-            const hiddenElements = document.querySelectorAll('.hidden');
-            hiddenElements.forEach((el) => observer.observe(el));
-        });
 
     return (
-        <section className={styles['projects'] + ' hidden'}>
+        <section className={styles['projects']}>
             <div className={styles['project-container']}>
                 <h1 className={'animate'}><span>Projects</span></h1>
                 <div className={styles['project-container-list']}>

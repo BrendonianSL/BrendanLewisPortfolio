@@ -8,6 +8,7 @@ export default function Goal({ goal, goalStatus, description }) {
         'Completed': 'green',
         'Pending': 'gray',
     }
+    
     return (
         <div className={styles['goal']}>
             <div className={styles['goal-icon']} style={{ backgroundColor: iconColor[goalStatus]}}></div>

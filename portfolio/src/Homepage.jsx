@@ -8,50 +8,37 @@ import Project from '../components/Project';
 import { projectList } from './Projects';
 
 export default function Homepage() {
-    useEffect(() => {
-        //Creates An Intersection Observer.
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if(entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
-                }
-            });
-        });
-
-        const hiddenElements = document.querySelectorAll('.hidden');
-        hiddenElements.forEach((el) => observer.observe(el));
-    });
 
     return (
         <main className={styles['homepage']}>
-            <section className={styles['hero-section'] + ' hidden'}>
+            <section className={styles['hero-section']}>
                 <div className={styles['hero-section-container']}>
-                    <img className={styles['hero-image'] + ' animate'} src="/brendan.jpg" />
+                    <img className={styles['hero-image']} src="/brendan.jpg" />
                     <div className={styles['hero-section-text']}>
-                        <h1 className={'animate'} style={{transitionDelay: '200ms'}}>I'm Brendan Lewis, a <span>Web Developer </span>specializing in creating <span>user friendly </span> and <span>intuitive </span> websites for everyone!</h1>
-                        <p className={'subheading-text animate'} style={{transitionDelay: '300ms'}}>Drawing from my expertise in UI/UX design and a solid foundation in web development, I craft intuitive, user-centric web pages that deliver seamless and engaging experiences.</p>
+                        <h1 style={{transitionDelay: '200ms'}}>I'm Brendan Lewis, a <span>Web Developer </span>specializing in creating <span>user friendly </span> and <span>intuitive </span> websites for everyone!</h1>
+                        <p className={'subheading-text'} style={{transitionDelay: '300ms'}}>Drawing from my expertise in UI/UX design and a solid foundation in web development, I craft intuitive, user-centric web pages that deliver seamless and engaging experiences.</p>
                     </div>
-                    <div className={styles['hero-button-container'] + ' animate'} style={{transitionDelay: '400ms'}}>
+                    <div className={styles['hero-button-container']} style={{transitionDelay: '400ms'}}>
                         <ButtonCTA text={'Get In Touch'} link={'mailto:bscottlewis04@gmail.com'}/>
                         <Button text={'View Work'} link={'/about'} />
                     </div>
                 </div>
             </section>
-            <section className={styles['featured-work'] + ' hidden'}>
-            <div className={styles['featured-work-container'] + ' animate'}>
+            <section className={styles['featured-work']}>
+            <div className={styles['featured-work-container']}>
                 {projectList.slice(0, 2).map((element, index) => (
                     <Project name={element.projectName} type={element.projectType} link={element.projectLink} image={element.projectImage} />
                 ))}
             </div>
             </section>
-            <section className={styles['workflow-section'] + ' hidden'}>
+            <section className={styles['workflow-section']}>
                 <div className={styles['workflow-container']}>
                     <div className={styles['workflow-text-container']}>
-                        <h2 className={'animate'}><span>Efficient And Productive Workflow</span></h2>
-                        <p className={'subheading-text animate'} style={{transitionDelay: '100ms'}}>Winging it might work for a weekend road trip, but in web development? Not so much. Without a solid game plan, things can spiral into a mess of extra work, frustration, and unnecessary headaches—for clients, studios, and, most importantly, me. That’s why I stick to the time-tested, battle-approved three-step process to keep everything smooth, efficient, and (mostly) stress-free.</p>
+                        <h2><span>Efficient And Productive Workflow</span></h2>
+                        <p className={'subheading-text'} style={{transitionDelay: '100ms'}}>Winging it might work for a weekend road trip, but in web development? Not so much. Without a solid game plan, things can spiral into a mess of extra work, frustration, and unnecessary headaches—for clients, studios, and, most importantly, me. That’s why I stick to the time-tested, battle-approved three-step process to keep everything smooth, efficient, and (mostly) stress-free.</p>
                     </div>
                     <div className={styles['workflow-process']}>
-                        <div className={styles['workflow-process-step'] + ' animate'} style={{transitionDelay: '200ms'}}>
+                        <div className={styles['workflow-process-step']} style={{transitionDelay: '200ms'}}>
                             <span>01</span>
                             <h3>Research</h3>
                             <p>
@@ -60,7 +47,7 @@ export default function Homepage() {
                                 I do research of surrounding websites within the same niche to discover common trends amongst competitors.
                             </p>
                         </div>
-                        <div className={styles['workflow-process-step'] + ' animate'} style={{transitionDelay: '300ms'}}>
+                        <div className={styles['workflow-process-step']} style={{transitionDelay: '300ms'}}>
                             <span>02</span>
                             <h3>UI/UX Design</h3>
                             <p>
@@ -68,7 +55,7 @@ export default function Homepage() {
                                 This phase will include prototypes and wireframes, focusing on aesthetics, usability, and consistency across the website.
                             </p>
                         </div>
-                        <div className={styles['workflow-process-step'] + ' animate'} style={{transitionDelay: '400ms'}}>
+                        <div className={styles['workflow-process-step']} style={{transitionDelay: '400ms'}}>
                             <span>03</span>
                             <h3>Web Design & Development</h3>
                             <p>
@@ -79,37 +66,37 @@ export default function Homepage() {
                     </div>
                 </div>
             </section>
-            <section className={styles['skillset-section'] + ' hidden'}>
+            <section className={styles['skillset-section']}>
                 <div className={styles['skillset-section-container']}>
                     <div className={styles['skillset-text-container']}>
-                        <h2 className={'animate'}><span>Ever Expanding Skillset</span></h2>
-                        <p className={'subheading-text animate'} style={{transitionDelay: '200ms'}}>
+                        <h2><span>Ever Expanding Skillset</span></h2>
+                        <p className={'subheading-text'} style={{transitionDelay: '200ms'}}>
                             Tech moves fast. Maybe not as fast as this scroll animation but still! You’re going to need someone who can keep up!
                         </p>
                     </div>
-                    <div className={styles['skillset-carousel'] + ' animate'}>
+                    <div className={styles['skillset-carousel']}>
                         <img src='/scrollnames.png'/>
                         <img src='/scrollnames.png'/>
                     </div>
                 </div>
             </section>
-            <section className={styles['about-section'] + ' hidden'}>
+            <section className={styles['about-section']}>
                 <div className={styles['about-section-container']}>
-                    <img src='/brendan.jpg' className={styles['about-section-image'] + ' animate'} />
+                    <img src='/brendan.jpg' className={styles['about-section-image']} />
                     <div className={styles['about-section-text']}>
                         <div className={styles['about-section-text-container']}>
-                            <h2 className={'animate'}><span>Breaking Code, Taking Names (Sometimes)</span></h2>
-                            <p className={'subheading-text animate'} style={{transitionDelay: '100ms'}}>
+                            <h2><span>Breaking Code, Taking Names (Sometimes)</span></h2>
+                            <p className={'subheading-text'} style={{transitionDelay: '100ms'}}>
                                 When I’m not spending time debugging a website that was the result of a missing semicolon, I’m usually diving into new projects, experimenting with design ideas, or indulging in hobbies and activities outside my profession. My journey has been far from boring, but I promise you I won’t bore you with the details. Just take a seat! 
                             </p>
                         </div>
-                        <div className={'animate'}>
+                        <div>
                         <Button text={'Follow Me'} link={'/about'} />
                         </div>
                     </div>
                 </div>
             </section>
-            <section className={styles['testimonials-section'] + ' hidden'}>
+            <section className={styles['testimonials-section']}>
                 <div className={styles['testimonials-container']}>
                     <div className={styles['testimonials-text-container']}>
                         <h2 className={'animate'}><span>Need More Convincing?</span></h2>
@@ -132,8 +119,8 @@ export default function Homepage() {
                     </div>
                 </div>
             </section>
-            <section className={styles['cta-section'] + ' hidden'}>
-                <div className={styles['cta-section-container'] + ' animate'}>
+            <section className={styles['cta-section']}>
+                <div className={styles['cta-section-container']}>
                     <div className={styles['cta-text-container']}>
                         <h2>You Got Room For <span>One More?</span></h2>
                         <p className={'subheading-text'}>My resume and I are looking for a new home!</p>

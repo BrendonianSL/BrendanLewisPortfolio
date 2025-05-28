@@ -4,26 +4,14 @@ import Quote from '../components/Quote';
 import { useEffect } from 'react';
 
 export default function About() {
-        useEffect(() => {
-            //Creates An Intersection Observer.
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if(entry.isIntersecting) {
-                        entry.target.classList.add('revealed');
-                    }
-                });
-            });
-    
-            const hiddenElements = document.querySelectorAll('.hidden');
-            hiddenElements.forEach((el) => observer.observe(el));
-        });
+
 
     return (
         <section className={styles['about']}>
-            <article className={styles['story-section'] + ' hidden'}>
+            <article className={styles['story-section']}>
                 <div className={styles['story']}>
-                    <h1 className={'animate'}>The <span>Man</span>, The <span>Myth</span>, The <span>Web Developer</span>?</h1>
-                    <div className={styles['story-content']+ ' animate'}>
+                    <h1>The <span>Man</span>, The <span>Myth</span>, The <span>Web Developer</span>?</h1>
+                    <div className={styles['story-content']}>
                         <figure>
                             <img src='/brendancapstone.jpg' />
                         </figure>
@@ -41,18 +29,18 @@ export default function About() {
                     </div>
                 </div>
             </article>
-            <article className={styles['goals-section'] + ' hidden'}>
+            <article className={styles['goals-section']}>
                 <div className={styles['goals-container']}>
                     <div className={styles['goals-text-container']}>
-                        <h2 className={'animate'}><span>Can't Stop, Won't Stop.</span></h2>
-                        <p className='subheading-text animate' style={{transitionDelay: '100ms'}}>
+                        <h2><span>Can't Stop, Won't Stop.</span></h2>
+                        <p className='subheading-text' style={{transitionDelay: '100ms'}}>
                             Despite my circumstances and knowledge, I make it a point to always be striving towards something and adapting where I can. Here, I outline my goals I want to achieve to better myself as a up and coming web developer!
                         </p>
                     </div>
-                    <div className={styles['goals-list'] + ' animate'} style={{transitionDelay: '200ms'}}>
-                        <Goal goal={'Learn And Master CSS Animations'} goalStatus={'In Progress'} description={'My knowledge of CSS is strong, but I wish to better understand the animation aspect that css brings to the table.'} />
-                        <Goal goal={'Learn Tailwind'} goalStatus={'Pending'} description={'After rounding out my css knowledge, I aim to bring this level of understanding to a new framework.'} />
-                        <Goal goal={'Learn TypeScript'} goalStatus={'Pending'} description={'Learning TypeScript will allow me to create more dynamic and interactive web pages as well as catch errors earlier than runtime.'} />
+                    <div className={styles['goals-list']} style={{transitionDelay: '200ms'}}>
+                        <Goal goal={'Learn Tailwind'} goalStatus={'Completed'} description={'After rounding out my css knowledge, I aim to bring this level of understanding to a new framework.'} />
+                        <Goal goal={'Learn TypeScript'} goalStatus={'Completed'} description={'Learning TypeScript will allow me to create more dynamic and interactive web pages as well as catch errors earlier than runtime.'} />
+                        <Goal goal={'Learn Vue'} goalStatus={'Pending'} description={'I wish to learn Vue to further expand my Front End knowledge and skillset.'} />
                     </div>
                 </div>
             </article>
