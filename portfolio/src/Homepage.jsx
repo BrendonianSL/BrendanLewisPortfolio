@@ -88,7 +88,7 @@ export default function Homepage() {
         <main className='flex flex-col gap-40 w-full max-w-[56.25rem]'>
             <section className='flex flex-col gap-8 items-start'>
                 <div className='flex flex-col gap-2 items-start'>
-                    <img src='../src/assets/brendan.png' />
+                    <img src='/brendan.png' />
                     <h1>Hey, I'm Brendan Lewis</h1>
                     <p className='text-(--blackSecondary)'>I'm a Web Designer and Software Engineer. I transform creative, visionary concepts into user-centered masterpieces.</p>
                 </div>
@@ -116,10 +116,10 @@ export default function Homepage() {
                 <h1>About Me</h1>
                 <div className=' flex items-center justify-center w-full lg:h-[200px]'>
                     <div className='flex flex-col items-center relative w-[600px] h-full'>
-                        <img className='w-[300px] lg:w-auto animate-[float_6s_ease-in-out_infinite] lg:absolute top-0 left-[0%]' src='../src/assets/floridafam.png' />
-                        <img className='w-[300px] lg:w-auto animate-[float_3s_ease-in-out_infinite] lg:absolute top-0 left-[20%]' src='../src/assets/floridabrendan.png' />
-                        <img className='w-[300px] lg:w-auto animate-[float_5s_ease-in-out_infinite] lg:absolute top-0 left-[35%]' src='../src/assets/graduationparents.png' />
-                        <img className='w-[300px] lg:w-auto animate-[float_4s_ease-in-out_infinite] lg:absolute top-0 left-[60%]' src='../src/assets/brendanfrances.png' />
+                        <img className='w-[300px] lg:w-auto animate-[float_6s_ease-in-out_infinite] lg:absolute top-0 left-[0%]' src='/floridafam.png' />
+                        <img className='w-[300px] lg:w-auto animate-[float_3s_ease-in-out_infinite] lg:absolute top-0 left-[20%]' src='/floridabrendan.png' />
+                        <img className='w-[300px] lg:w-auto animate-[float_5s_ease-in-out_infinite] lg:absolute top-0 left-[35%]' src='/graduationparents.png' />
+                        <img className='w-[300px] lg:w-auto animate-[float_4s_ease-in-out_infinite] lg:absolute top-0 left-[60%]' src='/brendanfrances.png' />
                     </div>
                 </div>
                 <p className='text-(--blackSecondary)'>
@@ -138,7 +138,7 @@ export default function Homepage() {
                             return (
                             <a href={project.link} key={index} className='flex justify-between items-center p-4 rounded-lg lg:hover:cursor-pointer lg:hover:bg-[#E8E8E8]'>
                                 <div className='flex items-center justify-start gap-4'>
-                                    <img src={project.icon ? `../src/assets/${project.icon}.png` : `../src/assets/${project.name.toLowerCase()}.png`} />
+                                    <img src={project.icon ? `/${project.icon}.png` : `/${project.name.toLowerCase()}.png`} />
                                     <div>
                                         <h2>{project.name}</h2>
                                         <span className='text-(--blackSecondary) text-[1rem]'>{project.projectType}</span>
@@ -158,7 +158,7 @@ export default function Homepage() {
                         techStack.map((tech, index) => {
                             return (
                                 <div key={index} className='flex flex-col items-start gap-4 bg-white rounded-lg p-8'>
-                                    <img src={`../src/assets/${tech.name.toLowerCase()}.png`} alt='React Logo' />
+                                    <img src={`/${tech.name.toLowerCase()}.png`} alt='React Logo' />
                                     <div className='flex flex-col gap-2'>
                                         <h2>{tech.name}</h2>
                                         <span className='block text-(--blackSecondary)'>{tech.description}</span>
@@ -195,7 +195,7 @@ export default function Homepage() {
                                 <div className='flex flex-col lg:flex-row justify-between gap-4 lg:gap-16'>
                                     <span>{edu.year}</span>
                                     <div className='flex flex-col gap-2'>
-                                        <h2 className=' text-(--blackPrimary)'>{edu.name} from <img className='inline-block w-[24px] h-[24px]' src={`../src/assets/${edu.icon}`} alt={`${edu.name} logo`} /> {edu.institution}</h2>
+                                        <h2 className=' text-(--blackPrimary)'>{edu.name} from <img className='inline-block w-[24px] h-[24px]' src={`/${edu.icon}`} alt={`${edu.name} logo`} /> {edu.institution}</h2>
                                         <div className='text-(--blackSecondary) w-full'>{edu.description}</div>
                                     </div>
                                 </div>
