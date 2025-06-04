@@ -1,50 +1,49 @@
+@import "tailwindcss";
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.floatReverse {
+  animation: float 7s ease-in-out infinite reverse;
+}
+
 * {
   margin: 0;
-  padding: 0;
   text-align: left;
   box-sizing: border-box;
-}
-button {
-  border: none;
+  font-family: 'Outfit', sans-serif;
 }
 
 #root {
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   --max-container-width: 1440px;
-  --alt-white: hsl(0, 0%, 97%);
-  --alt-black: #1A1A1A;
-  --cta-color: hsl(219, 88%, 53%);
-  --desktop-padding: 2.5rem; /* 40px */
-  --mobile-padding: 1.25rem; /* 20px */
-  --gap0: .25rem;
-  --gap1: .5rem;
-  --gap2: 1rem;
-  --gap3: 1.5rem;
-  --gap4: 2rem;
-  --gap5: 2.5rem;
-  --gap6: 3rem;
-  --gap7: 4rem;
-  --gap8: 7rem;
-
-
   color-scheme: light dark;
-  color: #1a1a1A;
-  background-color: #F7F7F7;
-
+  background-color: #EFEFEF;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --blackPrimary: #333333;
+  --blackSecondary: #616161;
 }
 
 .hidden .animate {
@@ -66,69 +65,25 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  color: var(--blackPrimary);
+  padding: 4rem 1rem;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
-  line-height: 1.1;
-  font-family: Gabarito;
+  color: var(--blackPrimary);
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  font-family: Gabarito;
 }
 
-h3 {
-  font-size: 1.125rem;
-  font-weight: 600;
-}
-
-span {
-  color: var(--cta-color);
-}
-
-.text-cta {
-  color: var(--cta-color);
-}
-
-.subheading-text {
-  font-size: 1.125rem;
+p {
+  font-size: 1.25rem;
 }
 
 .active {
   color: var(--cta-color);
-}
-
-a {
-  color: var(--alt-black);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--cta-color);
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    h1 {
-      font-size: 2.5rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    h1 {
-      font-size: 2rem;
-    }
-}
-
-@media(prefers-reduced-motion) {
-  .hidden {
-    transition: none;
-  }
 }
