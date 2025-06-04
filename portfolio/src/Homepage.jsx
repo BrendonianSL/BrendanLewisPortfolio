@@ -88,7 +88,7 @@ export default function Homepage() {
         <main className='flex flex-col gap-40 w-full max-w-[56.25rem]'>
             <section className='flex flex-col gap-8 items-start'>
                 <div className='flex flex-col gap-2 items-start'>
-                    <img src='../src/assets/reddit.png' />
+                    <img src='../src/assets/brendan.png' />
                     <h1>Hey, I'm Brendan Lewis</h1>
                     <p className='text-(--blackSecondary)'>I'm a Web Designer and Software Engineer. I transform creative, visionary concepts into user-centered masterpieces.</p>
                 </div>
