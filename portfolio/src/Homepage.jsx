@@ -93,7 +93,7 @@ export default function Homepage() {
                     <p className='text-(--blackSecondary)'>I'm a Web Designer and Software Engineer. I transform creative, visionary concepts into user-centered masterpieces.</p>
                 </div>
                 <div className='flex flex-col items-start md:flex-row gap-4'>
-                    <a download='BLWD.pdf' href='../src/BLWD.pdf' className='rounded-lg bg-[#333333] text-white pr-4 pl-4 pt-2 pb-2 font-normal text-sm'>Download Resume</a>
+                    <a download='BLWD.pdf' href='./BLWD.pdf' className='rounded-lg bg-[#333333] text-white pr-4 pl-4 pt-2 pb-2 font-normal text-sm'>Download Resume</a>
                     <div className='flex gap-2 items-center rounded-lg bg-[#C5F2C3] text-[#377C2E] pr-4 pl-4 pt-2 pb-2 font-normal text-sm'><div className='bg-[#377C2E] rounded-full w-2 h-2 animate-bounce'></div>Available For New Work</div>
                 </div>
                 <div className='flex gap-4'>
