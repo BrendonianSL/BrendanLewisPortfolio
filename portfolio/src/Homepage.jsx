@@ -45,6 +45,12 @@ export default function Homepage() {
 
     const project = [
         {
+            name: 'Medical Insurance Analysis',
+            projectType: 'Data Analysis',
+            link: 'https://github.com/BrendonianSL/MedicalFindings',
+            icon: 'data'
+        },
+        {
             name: 'Data Analyst Portfolio',
             projectType: 'Freelance Frontend Development',
             link: 'https://ngordonportfolio.com',
