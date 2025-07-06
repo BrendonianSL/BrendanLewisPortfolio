@@ -62,9 +62,9 @@ export default function Homepage() {
             link: 'https://github.com/BrendonianSL/BreadBox',
         },
         {
-            name: 'RedditMini',
+            name: 'Breaddit',
             projectType: 'Frontend Development',
-            link: 'https://brendoniansl.github.io/RedditMini/',
+            link: 'https://breadditmini.netlify.app',
         },
         {
             name: 'Jammin',
@@ -198,7 +198,7 @@ export default function Homepage() {
                     {
                         education.map((edu, index) => {
                             return (
-                                <div className='flex flex-col lg:flex-row justify-between gap-4 lg:gap-16'>
+                                <div key={index} className='flex flex-col lg:flex-row justify-between gap-4 lg:gap-16'>
                                     <span>{edu.year}</span>
                                     <div className='flex flex-col gap-2'>
                                         <h2 className=' text-(--blackPrimary)'>{edu.name} from <img className='inline-block w-[24px] h-[24px]' src={`${edu.icon}`} alt={`${edu.name} logo`} /> {edu.institution}</h2>
