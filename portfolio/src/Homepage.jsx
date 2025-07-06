@@ -51,6 +51,11 @@ export default function Homepage() {
             icon: 'data'
         },
         {
+            name: 'Threadway',
+            projectType: 'Full Stack Development',
+            link: 'https://github.com/BrendonianSL/Threadway',
+        },
+        {
             name: 'Data Analyst Portfolio',
             projectType: 'Freelance Frontend Development',
             link: 'https://ngordonportfolio.com',
