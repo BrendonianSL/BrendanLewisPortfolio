@@ -86,11 +86,11 @@ export default function Homepage() {
 
     const education = [
         {
-            name: 'B.A. Media Arts & Science',
-            institution: 'Indiana University',
-            description:'Graduated from Luddy School of Informatics & Computing. Developed skills in web development, UI/UX, and game systems contributing to agile projects with an emphasis on clean code.',
-            year: '2023',
-            icon: 'indianauniversity.svg'
+            name: 'Data Analyst',
+            institution: 'Codecademy',
+            description: 'Currently completing the Codecademy Data Analyst Career Path. Developing skills in Python, SQL, Tableau, and more!',
+            year: 'TBD',
+            icon: 'codecademy.svg'
         },
         {
             name: 'Full Stack Engineer',
@@ -98,7 +98,14 @@ export default function Homepage() {
             description: 'Completed the Codecademy Full Stack Engineer Career Path. Developed skills in build scalable web applications using PSQL, Express, React, and Node.',
             year: '2025',
             icon: 'codecademy.svg'
-        }
+        },
+        {
+            name: 'B.A. Media Arts & Science',
+            institution: 'Indiana University',
+            description:'Graduated from Luddy School of Informatics & Computing. Developed skills in web development, UI/UX, and game systems contributing to agile projects with an emphasis on clean code.',
+            year: '2023',
+            icon: 'indianauniversity.svg'
+        },
     ];
 
     return (
