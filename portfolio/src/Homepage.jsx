@@ -45,6 +45,12 @@ export default function Homepage() {
 
     const project = [
         {
+            name: 'Life Expectancy vs GDP',
+            projectType: 'Data Analysis',
+            link: 'https://github.com/BrendonianSL/LifeAndGDP',
+            icon: 'data'
+        },
+        {
             name: 'Medical Insurance Analysis',
             projectType: 'Data Analysis',
             link: 'https://github.com/BrendonianSL/MedicalFindings',
