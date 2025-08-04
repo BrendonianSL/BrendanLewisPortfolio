@@ -45,6 +45,12 @@ export default function Homepage() {
 
     const project = [
         {
+            name: 'VCT Masters Toronto 2025 Summative',
+            projectType: 'Data Analysis',
+            link: 'https://github.com/BrendonianSL/VCToronto_Analytics',
+            icon: 'vct'
+        },
+        {
             name: 'Life Expectancy vs GDP',
             projectType: 'Data Analysis',
             link: 'https://github.com/BrendonianSL/LifeAndGDP',
