@@ -5,7 +5,12 @@ export default function Homepage() {
     //Holds A List Of All Professional Work Experience.
     const workExperience = [
         {
-            duration: "2025 - Present",
+            duration: '2025 - Present',
+            position: 'Junior Frontend Developer',
+            company: 'Portland Trail Blazers'
+        },
+        {
+            duration: "2025",
             position: "Volunteer Web Developer",
             company: "NYC Auto Museum"
         },
@@ -94,8 +99,8 @@ export default function Homepage() {
         {
             name: 'Data Analyst',
             institution: 'Codecademy',
-            description: 'Currently completing the Codecademy Data Analyst Career Path. Developing skills in Python, SQL, Tableau, and more!',
-            year: 'TBD',
+            description: 'Completed the Codecademy Data Analyst Career Path. Developed skills in statistical analysis, visualization, and languages such as Python and SQL.',
+            year: '2025',
             icon: 'codecademy.svg'
         },
         {
@@ -120,11 +125,11 @@ export default function Homepage() {
                 <div className='flex flex-col gap-2 items-start'>
                     <img src='brendan.png' />
                     <h1>Hey, I'm Brendan Lewis</h1>
-                    <p className='text-(--blackSecondary)'>I'm a Web Designer and Software Engineer. I transform creative, visionary concepts into user-centered masterpieces.</p>
+                    <p className='text-(--blackSecondary)'>I'm a Junior Frontend Developer for the Portland Trailblazers. I transform creative, visionary concepts into user-centered masterpieces.</p>
                 </div>
                 <div className='flex flex-col items-start md:flex-row gap-4'>
                     <a download='BLWD.pdf' href='./BLWD.pdf' className='rounded-lg bg-[#333333] text-white pr-4 pl-4 pt-2 pb-2 font-normal text-sm'>Download Resume</a>
-                    <div className='flex gap-2 items-center rounded-lg bg-[#C5F2C3] text-[#377C2E] pr-4 pl-4 pt-2 pb-2 font-normal text-sm'><div className='bg-[#377C2E] rounded-full w-2 h-2 animate-bounce'></div>Available For New Work</div>
+                    <div className='flex gap-2 items-center rounded-lg bg-[#e9b492] text-[#ff6200] pr-4 pl-4 pt-2 pb-2 font-normal text-sm'><div className='bg-[#ff6200] rounded-full w-2 h-2 animate-bounce'></div>No Longer Available</div>
                 </div>
                 <div className='flex gap-4'>
                     <a href='https://www.behance.net/brendanlewis4/projects'><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -153,8 +158,8 @@ export default function Homepage() {
                     </div>
                 </div>
                 <p className='text-(--blackSecondary)'>
-                    I’m Brendan Lewis, an aspiring designer and coder. As an Indiana University graduate, I have a deep background in Game Development. However, post graduation, 
-                    I have since pivoted towards Web & Software Engineering. 
+                    I’m Brendan Lewis, a Junior Frontend Developer for the Portland Trail Blazers. As an Indiana University graduate, I have a deep background in Game Development. However, post graduation, 
+                    I have since pivoted towards Web Development. 
                     My passion for creating interesting and compelling designs for players has since been translated to creating transformative and user-centered designs. 
                     I thrive on developing my skillset by tackling new projects or learning new languages and frameworks to better market myself for the future.<br></br><br></br>
                     Outside of my profession, I find myself working out at the gym, playing video games (a bit too much), and being around friends and loved ones. I also love peaches.
@@ -197,6 +202,9 @@ export default function Homepage() {
                             )
                         })
                     }
+                </div>
+                <div className='w-full'>
+
                 </div>
             </section>
             <section className='flex flex-col gap-8'>
