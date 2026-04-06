@@ -50,6 +50,12 @@ export default function Homepage() {
 
     const project = [
         {
+            name: 'Minimalist Design Study',
+            projectType: 'Frontend Design',
+            link: 'https://github.com/BrendonianSL/MinimalistStudy',
+            icon: 'design'
+        },
+        {
             name: 'VCT Masters Toronto 2025 Summative',
             projectType: 'Data Analysis',
             link: 'https://github.com/BrendonianSL/VCToronto_Analytics',
