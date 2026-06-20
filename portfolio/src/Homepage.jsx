@@ -130,11 +130,11 @@ export default function Homepage() {
             <section className='flex flex-col gap-8 items-start'>
                 <div className='flex flex-col gap-2 items-start'>
                     <img src='brendan.png' />
-                    <h1>Hey, I'm Brendan Lewis</h1>
+                    <h1>{`Hey, I'm Brendan Lewis`}</h1>
                     <p className='text-(--blackSecondary)'>I'm a Junior Frontend Developer for the Portland Trailblazers. I transform creative, visionary concepts into user-centered masterpieces.</p>
                 </div>
                 <div className='flex flex-col items-start md:flex-row gap-4'>
-                    <a download='BLWD.pdf' href='./BLWD.pdf' className='rounded-lg bg-[#333333] text-white pr-4 pl-4 pt-2 pb-2 font-normal text-sm'>Download Resume</a>
+                    <a download='./BLResume.pdf' href='./BLResume.pdf' className='rounded-lg bg-[#333333] text-white pr-4 pl-4 pt-2 pb-2 font-normal text-sm'>Download Resume</a>
                     <div className='flex gap-2 items-center rounded-lg bg-[#e9b492] text-[#ff6200] pr-4 pl-4 pt-2 pb-2 font-normal text-sm'><div className='bg-[#ff6200] rounded-full w-2 h-2 animate-bounce'></div>No Longer Available</div>
                 </div>
                 <div className='flex gap-4'>
@@ -250,7 +250,7 @@ export default function Homepage() {
             </section>
             <section className='flex flex-col items-center justify-center gap-4'>
                 <h1>Hey, Thanks For Visiting!</h1>
-                <p className='text-(--blackSecondary)'>Keep being great! Don't forget to check me out!</p>
+                <p className='text-(--blackSecondary)'>{`Keep being great! Don't forget to check me out!`}</p>
                 <div className='flex gap-4'>
                     <a href='https://www.behance.net/brendanlewis4/projects'><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.1925 13.8837V11.8775C9.1925 11.7587 9.1925 11.7112 9.3475 11.7112C10.6763 11.7112 11.7563 11.6325 12.2925 11.9487C12.83 12.2637 12.8525 12.6987 12.8613 12.8287C12.87 12.9587 12.8663 13.145 12.6163 13.5987C12.3663 14.0525 11.2475 14.0612 10.44 14.0612H9.37126C9.24001 14.0612 9.1925 14.0137 9.1925 13.8837ZM12.875 15.9862C12.9988 16.1442 13.0872 16.3271 13.1341 16.5222C13.1811 16.7174 13.1855 16.9204 13.1471 17.1175C13.1086 17.3145 13.0283 17.501 12.9115 17.6643C12.7947 17.8275 12.6441 17.9638 12.47 18.0637C12.2143 18.1713 11.9399 18.2278 11.6625 18.23H9.35875C9.24 18.23 9.1925 18.23 9.1925 18.0762V15.7012C9.1925 15.5825 9.1925 15.535 9.3475 15.535H10.8788C11.8288 15.535 12.4225 15.4525 12.875 15.9862Z" fill="#333333"/>
