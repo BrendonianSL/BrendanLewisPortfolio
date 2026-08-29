@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.floatReverse {
+  animation: float 7s ease-in-out infinite reverse;
+}
+
+* {
+  margin: 0;
+  text-align: left;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  --max-container-width: 1440px;
+  color-scheme: light dark;
+  background-color: #EFEFEF;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --blackPrimary: #333333;
+  --blackSecondary: #616161;
+}
+
+.hidden .animate {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+.revealed .animate {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--blackPrimary);
+  padding: 4rem 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--blackPrimary);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.active {
+  color: var(--cta-color);
+}
