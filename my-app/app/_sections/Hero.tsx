@@ -15,7 +15,7 @@ const Hero = () => {
                     })}
                 </div>
             </div>
-            <div className='w-100 font-mono text-[16px] lg:text-[20px] lowercase z-10'>
+            <div className='max-w-100 w-full font-mono text-[16px] lg:text-[20px] lowercase z-10'>
                 I create intuitive web designs that help stand out and connect with users.
             </div>
             <img className='absolute top-0 left-0 opacity-20 w-full h-full object-cover' src={background.src} alt='CSS on a screen' />
