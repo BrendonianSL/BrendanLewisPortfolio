@@ -18,7 +18,6 @@ const Footer = () => {
                     <p>{dateConverter()}</p>
                 </div>
             </div>
-
         </div>
     )
 }
