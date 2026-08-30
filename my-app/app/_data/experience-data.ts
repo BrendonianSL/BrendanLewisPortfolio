@@ -7,7 +7,7 @@ const jobExperience = [
     desc: 'Designed, developed, and maintained web experiences and internal services used by the organization. Contributed to UI/UX design and development across multiple projects.',
     tags: ['front-end', 'ui-ux design'],
     tenure: '2025-Current',
-    iconFile: 'Soon'
+    iconFile: 'trailblazers.svg'
 },
 {
     company: 'NY Auto Museum',
@@ -15,7 +15,7 @@ const jobExperience = [
     desc: 'Collaborated with developers to maintain and improve the museum\'s website. Contributed to front-end development and ongoing site updates.',
     tags: ['front-end'],
     tenure: '2024',
-    iconFile: 'Soon',
+    iconFile: 'work.svg',
 },
 {
     position: 'Freelance Game Developer',
@@ -23,7 +23,7 @@ const jobExperience = [
     tenure: '2022-2023',
     tags: ['game-development'],
     desc: 'Contributed to the development and design of an interactive video game for museum visitors. Helped continuously improve the experience throughout development.',
-    iconFile: 'Soon'
+    iconFile: 'work.svg'
 }
 ] satisfies JobSchema[]
 

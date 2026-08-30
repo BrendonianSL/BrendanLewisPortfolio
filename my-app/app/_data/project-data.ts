@@ -2,14 +2,14 @@ import { ProjectsSchema } from './schemas';
 
 const projectData : ProjectsSchema[] = [
     {
-        title: 'Nutauloric',
+        title: 'Kinetic',
         desc: 'Full stack application for marathon.',
         link: 'https://github.com/BrendonianSL/NuTauloric',
         type: 'full-stack',
         img: 'nutauloric.svg',
     },
     {
-        title: 'Threadway',
+        title: 'Trace',
         desc: 'Full stack application built to save your favorite places.',
         link: 'https://github.com/BrendonianSL/Threadway',
         type: 'full-stack',
@@ -30,7 +30,7 @@ const projectData : ProjectsSchema[] = [
         img: 'breadbox.svg',
     },
     {
-        title: 'Jammin',
+        title: 'Reverb',
         desc: 'A front end application built using Spotify API',
         link: 'https://github.com/BrendonianSL/Jammin-React-Application',
         type: 'front-end',
